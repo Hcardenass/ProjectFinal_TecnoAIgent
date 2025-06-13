@@ -38,29 +38,29 @@ Asegúrate de tener un usuario habilitado y con los permisos necesarios para con
 
 El flujo de la solución es el siguiente:
 
- 1.Inicio de sesión seguro
+ **1. Inicio de sesión seguro**
 
 El usuario accede a la plataforma web desplegada en Vercel autenticándose con su cuenta de Google (Gmail).
 
- 2.Selección de vista analítica
+ 2. Selección de vista analítica
 
 En el frontend, el usuario selecciona la vista analítica con la que desea interactuar (por ejemplo, Detalles de Pedidos o Ventas Comerciales) mediante un menú desplegable.
 
- 3.Comunicación con backend empresarial
+ 3. Comunicación con backend empresarial
 
 El frontend realiza una petición GET a la ruta /agent, la cual es gestionada por un servidor Microsoft IIS que hospeda la API desarrollada en Flask. Esta API integra LangChain para la gestión conversacional y orquestación de flujos.
 
- 4.Acceso a datos empresariales y memoria contextual
+ **4. Acceso a datos empresariales y memoria contextual**
 
 El agente procesa la solicitud y consulta:.
 
 - SAP HANA Cloud para acceder al conocimiento empresarial en tiempo real (vistas analíticas).
 - PostgreSQL para gestionar la memoria conversacional y contexto del usuario.
 
- 5.Generación y trazabilidad de respuestas
+ **5. Generación y trazabilidad de respuestas**
 
 El modelo GPT‑4.1 de OpenAI interpreta la pregunta, genera la consulta SQL, analiza los datos obtenidos y produce la respuesta final. Toda la interacción es trazada con LangSmith para auditoría y mejora continua.
 
- 6.Entrega de resultados claros y explicativos
+ **6. Entrega de resultados claros y explicativos**
 
 La respuesta generada es devuelta al usuario en el frontend, presentando los datos solicitados junto con explicaciones claras, facilitando la toma de decisiones para los usuarios de negocio.
