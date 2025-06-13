@@ -1,0 +1,15 @@
+Flask==2.0.1
+gunicorn==20.1.0
+werkzeug==2.0.3
+langchain-openai
+langchain_core
+langgraph
+langgraph-checkpoint-postgres
+langchain
+langchain-community
+hdbcli==2.24.24
+sqlalchemy-hana==3.0.2
+sqlalchemy>=2.0
+python-dotenv==1.0.1
+langsmith
+psycopg[binary,pool]==3.2.6
