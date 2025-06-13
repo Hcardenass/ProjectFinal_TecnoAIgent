@@ -84,6 +84,8 @@ La respuesta generada es devuelta al usuario en el frontend, presentando los dat
 ## 🔐 Variables de Entorno (sugeridas)
 Para producción, reemplaza los valores sensibles en app.py por variables de entorno:
 
+````markdown
+
 - HANA_USER=
 - HANA_PWD=
 - HANA_HOST=
@@ -98,6 +100,7 @@ Para producción, reemplaza los valores sensibles en app.py por variables de ent
 - PG_HOST=
 - PG_PORT=
 - PG_DB=
+````
 
 ## 🧪 Requisitos
 Archivo **requirements.txt** con todas las dependencias necesarias:
