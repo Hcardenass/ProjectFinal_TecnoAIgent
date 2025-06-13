@@ -19,15 +19,15 @@ Esto es necesario para que el firewall permita el acceso a la base de datos desd
 Descarga e instala el SAP HANA Client. Durante la instalación, selecciona el componente ODBC Driver.
 
 3. Configurar la conexión ODBC
-- Abre el Administrador de Orígenes de Datos ODBC de tu sistema operativo.
-- Crea una nueva conexión (DSN) usando el driver de SAP HANA.
-- Completa los siguientes datos:
-            - Host
-            - Puerto
-            - Usuario
-            - Contraseña
+   - Abre el Administrador de Orígenes de Datos ODBC de tu sistema operativo.
+   - Crea una nueva conexión (DSN) usando el driver de SAP HANA.
+   - Completa los siguientes datos:
+                        - Host
+                        - Puerto
+                        - Usuario
+                        - Contraseña
 
-- Prueba la conexión para asegurarte de que funciona correctamente.
+   - Prueba la conexión para asegurarte de que funciona correctamente.
 
 4. Credenciales de acceso
 Asegúrate de tener un usuario habilitado y con los permisos necesarios para consultar las vistas analíticas en SAP HANA.
