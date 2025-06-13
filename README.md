@@ -102,21 +102,26 @@ Para producción, reemplaza los valores sensibles en app.py por variables de ent
 ## 🧪 Requisitos
 Archivo **requirements.txt** con todas las dependencias necesarias:
 
-- Flask==2.0.1
-- gunicorn==20.1.0
-- werkzeug==2.0.3
-- langchain
-- langchain-openai
-- langchain_core
-- langchain-community
-- langgraph
-- langgraph-checkpoint-postgres
-- langsmith
-- hdbcli==2.24.24
-- sqlalchemy-hana==3.0.2
-- sqlalchemy>=2.0
-- psycopg[binary,pool]==3.2.6
-- psycopg2-binary
-- google-cloud-storage
-- twilio
-- python-dotenv==1.0.1
+````markdown
+```
+Flask==2.0.1
+gunicorn==20.1.0
+werkzeug==2.0.3
+langchain
+langchain-openai
+langchain_core
+langchain-community
+langgraph
+langgraph-checkpoint-postgres
+langsmith
+hdbcli==2.24.24
+sqlalchemy-hana==3.0.2
+sqlalchemy>=2.0
+psycopg[binary,pool]==3.2.6
+psycopg2-binary
+google-cloud-storage
+twilio
+python-dotenv==1.0.1
+```
+````
+
