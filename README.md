@@ -134,3 +134,5 @@ Gracias por revisar este repositorio.
 Si te interesa colaborar puedes escribirme o seguirme en LinkedIn:
 
 [🔗 LinkedIn](https://www.linkedin.com/in/hector-cardenas-camacho-197101169/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adrian%20Cárdenas-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hector-cardenas-camacho-197101169/)
+
