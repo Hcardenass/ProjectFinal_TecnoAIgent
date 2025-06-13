@@ -15,8 +15,8 @@ load_dotenv()
 
 def make_tool_audio_whatsapp(
     client_openai,
-    twilio_from_number='whatsapp:+14155238886',
-    bucket_name="gc-tecno-dw-pyt-001_cloudbuild"
+    twilio_from_number='whatsapp:+1',
+    bucket_name="gc-"
 ):
     """
     Genera un audio desde texto, lo sube a GCS y lo envía por WhatsApp usando Twilio.
@@ -66,7 +66,7 @@ def make_tool_audio_whatsapp(
     twilio = TwilioAPIWrapper(
         account_sid=os.getenv("TWILIO_ACCOUNT_SID"),
         auth_token=os.getenv("TWILIO_AUTH_TOKEN"),
-        from_number="whatsapp:+14155238886",  # Este es el número de sandbox de WhatsApp (generalmente)
+        from_number="whatsapp:+14",  # Este es el número de sandbox de WhatsApp (generalmente)
     )
 
     @tool
