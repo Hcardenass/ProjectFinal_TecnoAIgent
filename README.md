@@ -79,3 +79,22 @@ La respuesta generada es devuelta al usuario en el frontend, presentando los dat
 - 📊 **LangSmith:** Plataforma para monitoreo, trazabilidad y evaluación del desempeño de agentes conversacionales y flujos LangChain.
 - ▲ **Vercel:** Plataforma de despliegue frontend, permitiendo acceso web seguro, autenticación con Google y entrega de la interfaz de usuario.
 - 🪣 **Cloud Storage:** Buckets de almacenamiento en la nube (por ejemplo, Google Cloud Storage) utilizados para alojar los archivos de audio generados e integrados desde WhatsApp.
+
+
+## 🔐 Variables de Entorno (sugeridas)
+Para producción, reemplaza los valores sensibles en app.py por variables de entorno:
+
+- HANA_USER=
+- HANA_PWD=
+- HANA_HOST=
+- HANA_PORT=
+- HANA_SCHEMA=SAP_CONTENT
+- API_KEY=
+- API_LG=
+- TWILIO_ACCOUNT_SID=
+- TWILIO_AUTH_TOKEN=
+- PG_USER=
+- PG_PWD=
+- PG_HOST=
+- PG_PORT=
+- PG_DB=
