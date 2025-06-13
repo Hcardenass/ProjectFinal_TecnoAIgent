@@ -130,5 +130,7 @@ python-dotenv==1.0.1
 
 ## 🤝 Conecta conmigo
 Gracias por revisar este repositorio.
+
 Si te interesa colaborar puedes escribirme o seguirme en LinkedIn:
+
 [Conecta conmigo en LinkedIn](https://www.linkedin.com/in/hector-cardenas-camacho-197101169/)
