@@ -42,11 +42,11 @@ El flujo de la solución es el siguiente:
 
 El usuario accede a la plataforma web desplegada en Vercel autenticándose con su cuenta de Google (Gmail).
 
- 2. Selección de vista analítica
+ **2. Selección de vista analítica**
 
 En el frontend, el usuario selecciona la vista analítica con la que desea interactuar (por ejemplo, Detalles de Pedidos o Ventas Comerciales) mediante un menú desplegable.
 
- 3. Comunicación con backend empresarial
+ **3. Comunicación con backend empresarial**
 
 El frontend realiza una petición GET a la ruta /agent, la cual es gestionada por un servidor Microsoft IIS que hospeda la API desarrollada en Flask. Esta API integra LangChain para la gestión conversacional y orquestación de flujos.
 
