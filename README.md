@@ -64,3 +64,18 @@ El modelo GPT‑4.1 de OpenAI interpreta la pregunta, genera la consulta SQL, an
  **6. Entrega de resultados claros y explicativos**
 
 La respuesta generada es devuelta al usuario en el frontend, presentando los datos solicitados junto con explicaciones claras, facilitando la toma de decisiones para los usuarios de negocio.
+
+
+
+## 🚀 Tecnologías Utilizadas
+
+- 🦜 **LangChain:** Orquestador del agente y sus herramientas conversacionales.
+- 🤖 **GPT-4.1:** Modelo base de lenguaje natural para generación de respuestas inteligentes.
+- 🔗 **LangGraph:** Framework para la gestión de flujos conversacionales y memoria persistente del agente.
+- 🐘 **PostgreSQL:** Almacenamiento de memoria de sesión del usuario (usando PostgresSaver).
+- ☁️ **SAP HANA Cloud:** Base de datos empresarial en la nube utilizada para el almacenamiento y consulta de datos transaccionales y analíticos del negocio.
+- 🌐 **Flask:** API backend que también actúa como webhook para integraciones como WhatsApp.
+- 🖥️ **Microsoft IIS:** Servidor web empresarial utilizado para desplegar y administrar la aplicación Flask en entornos productivos, garantizando alta disponibilidad y seguridad.
+- 📊 **LangSmith:** Plataforma para monitoreo, trazabilidad y evaluación del desempeño de agentes conversacionales y flujos LangChain.
+- ▲ **Vercel:** Plataforma de despliegue frontend, permitiendo acceso web seguro, autenticación con Google y entrega de la interfaz de usuario.
+- 🪣 **Cloud Storage:** Buckets de almacenamiento en la nube (por ejemplo, Google Cloud Storage) utilizados para alojar los archivos de audio generados e integrados desde WhatsApp.
