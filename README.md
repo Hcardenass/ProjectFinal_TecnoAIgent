@@ -103,7 +103,7 @@ Para producción, reemplaza los valores sensibles en app.py por variables de ent
 Archivo **requirements.txt** con todas las dependencias necesarias:
 
 ````markdown
-```
+
 Flask==2.0.1
 gunicorn==20.1.0
 werkzeug==2.0.3
@@ -122,6 +122,6 @@ psycopg2-binary
 google-cloud-storage
 twilio
 python-dotenv==1.0.1
-```
+
 ````
 
