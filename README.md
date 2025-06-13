@@ -1,5 +1,5 @@
 # TecnoAIgent: Asistente de IA con conexión a SAP
-![image](https://github.com/user-attachments/assets/3c3c5100-c03a-4a22-9778-96f558edd4ca)
+![image](https://cdn.midjourney.com/1f558f44-30e1-45b9-97e9-b5e94b1843cc/0_1.png)
 
 La solución consiste en un agente conversacional conectado directamente a SAP HANA, capaz de:
 •	Interpretar preguntas en lenguaje natural y traducirlas automáticamente a consultas SQL sobre las vistas comerciales y operativas.
