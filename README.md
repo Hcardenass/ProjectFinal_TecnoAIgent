@@ -32,6 +32,6 @@ Descarga e instala el SAP HANA Client. Durante la instalación, selecciona el co
 4. Credenciales de acceso
 Asegúrate de tener un usuario habilitado y con los permisos necesarios para consultar las vistas analíticas en SAP HANA.
 
-## 2. Arquitectura de solución
+# Arquitectura de solución
 
 ![Arquitectura de Agente SQL SAP](Arquitectura_AgentSQL_SAP.gif)
