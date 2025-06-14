@@ -101,11 +101,68 @@ Pasos principales del despliegue:
    wfastcgi-enable
    ```` 
    4. Copia el archivo web.config a la raíz del proyecto
+      
    ⚠️ Importante:
 Personaliza el archivo web.config para que las rutas apunten a tu entorno.
 NO uses las rutas de ejemplo tal cual; reemplázalas por las correspondientes a tu carpeta y entorno virtual.
 
-   6. 
+Ejemplo de web.config (modifica todas las rutas según tu instalación):
+ ````
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonFastCGI"
+          path="*"
+          verb="*"
+          modules="FastCgiModule"
+          scriptProcessor="C:\ruta\a\tu\proyecto\env\Scripts\python.exe|C:\ruta\a\tu\proyecto\env\lib\site-packages\wfastcgi.py"
+          resourceType="Unspecified"
+          requireAccess="Script" />
+    </handlers>
+    <fastCgi>
+      <application
+          fullPath="C:\ruta\a\tu\proyecto\env\Scripts\python.exe"
+          arguments="C:\ruta\a\tu\proyecto\env\lib\site-packages\wfastcgi.py"
+          signalBeforeTerminateSeconds="30">
+        <environmentVariables>
+          <environmentVariable name="WSGI_HANDLER" value="app.app" />
+          <environmentVariable name="PYTHONPATH" value="C:\ruta\a\tu\proyecto" />
+          <environmentVariable name="WSGI_LOG" value="C:\ruta\a\tu\proyecto\app.log" />
+          <environmentVariable name="PYTHONHOME" value="C:\ruta\a\tu\proyecto\env" />
+        </environmentVariables>
+      </application>
+    </fastCgi>
+    <httpErrors errorMode="Detailed" />
+    <asp scriptErrorSentToBrowser="true" />
+  </system.webServer>
+  <appSettings>
+    <add key="WSGI_HANDLER" value="app.app" />
+    <add key="PYTHONPATH" value="C:\ruta\a\tu\proyecto" />
+    <add key="WSGI_LOG" value="C:\ruta\a\tu\proyecto\app.log" />
+  </appSettings>
+</configuration>
+
+ ````
+   5. Activa CGI en Windows:
+      - Ve a Características de Windows → World Wide Web Services → Application Development Features.
+      - Activa la casilla CGI.
+
+   6. Crea un nuevo Website en IIS:
+      - En el Administrador de IIS, agrega un nuevo “Sitio Web”.
+      - Selecciona como ruta física la carpeta de tu proyecto.
+      - Verifica que el Handler Mapping incluya "PythonFastCGI" (esto aparece después de seleccionar CGI).
+
+   7. Activa CGI en Windows:
+      - Da permisos de “Lectura y Ejecución” a:
+         - La carpeta de tu proyecto
+         - El ejecutable de Python (en la carpeta de tu venv)
+         - El sitio web creado en IIS
+      - Paraa esto: haz clic derecho → “Propiedades” → pestaña “Seguridad” → “Editar” → “Agregar” → selecciona el usuario del sitio web o IIS_IUSRS, y otorga permisos.
+        
+   8. Reinicia IIS (puedes usar iisreset en cmd) para aplicar cambios.
+
+      
 ## 🔐 Variables de Entorno (sugeridas)
 Para producción, reemplaza los valores sensibles en app.py por variables de entorno:
 
