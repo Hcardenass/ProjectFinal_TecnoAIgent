@@ -158,7 +158,7 @@ Ejemplo de web.config (modifica todas las rutas según tu instalación):
          - La carpeta de tu proyecto
          - El ejecutable de Python (en la carpeta de tu venv)
          - El sitio web creado en IIS
-      - Paraa esto: haz clic derecho → “Propiedades” → pestaña “Seguridad” → “Editar” → “Agregar” → selecciona el usuario del sitio web o IIS_IUSRS, y otorga permisos.
+      - Para esto: haz clic derecho → “Propiedades” → pestaña “Seguridad” → “Editar” → “Agregar” → selecciona el usuario del sitio web o IIS_IUSRS, y otorga permisos.
         
    8. Reinicia IIS (puedes usar iisreset en cmd) para aplicar cambios.
 
