@@ -80,6 +80,16 @@ La respuesta generada es devuelta al usuario en el frontend, presentando los dat
 - ▲ **Vercel:** Plataforma de despliegue frontend, permitiendo acceso web seguro, autenticación con Google y entrega de la interfaz de usuario.
 - 🪣 **Cloud Storage:** Buckets de almacenamiento en la nube (por ejemplo, Google Cloud Storage) utilizados para alojar los archivos de audio generados e integrados desde WhatsApp.
 
+## 🖥️ Despliegue Backend en IIS (Microsoft Internet Information Services)
+Para publicar la API Flask en un entorno productivo empresarial, se usó IIS como servidor web, aprovechando el módulo FastCGI para aplicaciones Python.
+
+Pasos principales del despliegue:
+````
+- cd C:\inetpub\wwwroot\agentsqlvercel
+- py -m venv env
+- env\Scripts\activate
+````  
+Crear y activar entorno virtual:
 
 ## 🔐 Variables de Entorno (sugeridas)
 Para producción, reemplaza los valores sensibles en app.py por variables de entorno:
