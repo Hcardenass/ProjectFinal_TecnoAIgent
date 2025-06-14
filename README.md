@@ -84,13 +84,28 @@ La respuesta generada es devuelta al usuario en el frontend, presentando los dat
 Para publicar la API Flask en un entorno productivo empresarial, se usó IIS como servidor web, aprovechando el módulo FastCGI para aplicaciones Python.
 
 Pasos principales del despliegue:
-````
-- cd C:\inetpub\wwwroot\agentsqlvercel
-- py -m venv env
-- env\Scripts\activate
-````  
-Crear y activar entorno virtual:
+   1. Crear y activar entorno virtual:
+   ````
+   - cd C:\inetpub\wwwroot\agentsqlvercel
+   - py -m venv env
+   - env\Scripts\activate
+   ````  
+   2. Instalar dependencias clave::
+   ````
+   pip install -r requirements.txt
+   pip install wfastcgi
+   ````
+   3. Habilita FastCGI:
+   ````
+   cd env\Scripts
+   wfastcgi-enable
+   ```` 
+   4. Copia el archivo web.config a la raíz del proyecto
+   ⚠️ Importante:
+Personaliza el archivo web.config para que las rutas apunten a tu entorno.
+NO uses las rutas de ejemplo tal cual; reemplázalas por las correspondientes a tu carpeta y entorno virtual.
 
+   6. 
 ## 🔐 Variables de Entorno (sugeridas)
 Para producción, reemplaza los valores sensibles en app.py por variables de entorno:
 
